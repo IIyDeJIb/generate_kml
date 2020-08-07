@@ -38,5 +38,7 @@ for point in data.iterrows():
 	# text to all the wells of the same shared style
 	pnt.extendeddata.newdata(name='Well type / status',
 							 value=str(point[1].Well_Type))
+	pnt.extendeddata.newdata(name='API',
+							 value=point[1].API)
 
 kml.save('North Coleman Well Base.kml')
